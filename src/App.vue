@@ -1,20 +1,26 @@
 <template>
   <div id="app">
-    <MyComponent />
+    <Count />
+    <FindName />
   </div>
 </template>
 
 <script>
-import MyComponent from "./components/MyComponent";
+import Count from "./components/Count";
+import FindName from './components/FindName';
+
 
 export default {
   name: "App",
   components: {
-    MyComponent
+    Count,
+    FindName
   }
 };
 </script>
 
 <style>
-
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 </style>

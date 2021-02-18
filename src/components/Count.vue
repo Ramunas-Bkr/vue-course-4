@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <p>Įveskite produktų kiekį</p>
+    <h4>Įveskite produktų kiekį</h4>
     <div class="product-count-block">
       <button @click="changeCount(-1)">-</button>
       <input :value="count" type="number" />
@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: "MyComponent",
+  name: "Count",
   data() {
     return {
       count: 1
@@ -32,6 +32,9 @@ export default {
 };
 </script>
 <style>
+.root {
+  margin-bottom: 50px;
+}
 .product-count-block button {
   background: #6ed111;
   border: none;
@@ -46,5 +49,6 @@ export default {
   text-align: center;
   padding: 5px 0;
   border-radius: 5px;
+  border: 1px solid lightgray;
 }
 </style>
