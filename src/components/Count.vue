@@ -32,23 +32,15 @@ export default {
 };
 </script>
 <style>
-.root {
-  margin-bottom: 50px;
-}
-.product-count-block button {
-  background: #6ed111;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-weight: 700;
-  color: #000;
-}
-.product-count-block input {
-  margin: 0 10px;
-  width: 50px;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-}
+  .root {
+    margin-bottom: 50px;
+  }
+  .product-count-block input {
+    margin: 0 10px;
+    width: 50px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
 </style>
