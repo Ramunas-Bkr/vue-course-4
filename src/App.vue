@@ -4,6 +4,8 @@
     <FindName />
     <hr>
     <PhotoRedactor />
+    <hr>
+    <product-list />
   </div>
 </template>
 
@@ -11,6 +13,7 @@
 import Count from "./components/Count";
 import FindName from './components/FindName';
 import PhotoRedactor from './components/PhotoRedactor.vue';
+import ProductList from './components/ProductList.vue';
 
 
 export default {
@@ -18,7 +21,8 @@ export default {
   components: {
     Count,
     FindName,
-    PhotoRedactor
+    PhotoRedactor,
+    ProductList
   }
 };
 </script>
@@ -34,5 +38,8 @@ export default {
   padding: 10px 20px;
   font-weight: 700;
   color: #fff;
+  }
+  li {
+    list-style: none;
   }
 </style>

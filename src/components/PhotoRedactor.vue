@@ -60,8 +60,7 @@
         :max="imageRotate.maxDeg"/>
       </div>
       <button @click="isCatVisible = !isCatVisible">
-        <span v-if="isCatVisible">Hidden</span>
-        <span v-else>Show</span>
+        {{ isCatVisible ? 'Hidden' : 'Show' }}
       </button>
     </div>
   </div>
