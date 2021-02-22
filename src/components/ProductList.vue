@@ -2,10 +2,7 @@
   <div class="product-list">
     <div class="flex top-information">
       <h1>Rašomieji stalai</h1>
-      <my-input v-model="searchText" />
-      <button>
-        Rasti
-      </button>
+      <search @search="searchProducts" />
     </div>
 
     <ul class="list-default flex">
@@ -22,14 +19,13 @@
   </div>
 </template>
 <script>
-import MyInput from './MyInput.vue';
 import ProductCard from './ProductCard.vue';
+import Search from './Search.vue';
 export default {
   name: 'ProductList',
-  components: { ProductCard, MyInput },
+  components: { ProductCard, Search },
   data() {
     return {
-      searchText: '',
       products: [
         {
           title: 'Skarsta',
@@ -72,6 +68,9 @@ export default {
   methods: {
     addToBasket(index) {
       console.log(index);
+    },
+    searchProducts(searchText) {
+      console.log(searchText);
     },
   },
 };

@@ -1,21 +1,26 @@
 <template>
-        <input type="text" class="search" @input="$emit('input', $event.target.value)">
+  <input type="text" class="search" @input="$emit('input', $event.target.value)" />
 </template>
 <script>
 export default {
-    name: "MyInput",
-    model: {
-        prop: "value",
-        event: "input"
-    }
-}
+  name: 'MyInput',
+  model: {
+    prop: 'value',
+    event: 'input',
+  },
+  methods: {
+    addSearchText() {
+      console.log('Labas');
+    },
+  },
+};
 </script>
 <style>
-  .search {
-    margin: 0 10px;
-    width: 250px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
+.search {
+  margin: 0 10px;
+  width: 250px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
 }
 </style>
